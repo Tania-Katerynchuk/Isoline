@@ -55,8 +55,8 @@ namespace WinFormIsoline
                 points[i] = new Vector3(rnd.Next(-300, 300), rnd.Next(-300, 300));
                 points[i].Z = i == 0 ? 1000 : (int)(1000 - LengthPoint(points[0], points[i]));
                 g.FillEllipse(redBrush, points[i].X - 4, points[i].Y - 4, 8, 8);
-                g.DrawString(points[i].Z.ToString(), new Font("Helvetica", 9),
-                Brushes.Black, points[i].X, points[i].Y);
+                //g.DrawString(points[i].Z.ToString(), new Font("Helvetica", 9),
+                //Brushes.Black, points[i].X, points[i].Y);
             }
             DrawOutLine(g);
         }
